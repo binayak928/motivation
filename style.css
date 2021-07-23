@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: rgb(130, 255, 174);
+  background: radial-gradient(circle, rgba(130, 255, 174, 0.7903536414565826) 0%, rgba(150, 210, 251, 0.19091386554621848) 100%);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 80%;
+
+  font-family: "Bangers", sans-serif;
+  font-size: 4rem;
+}
+
+.g,
+.o,
+.s,
+.t,
+.u,
+.d,
+.y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  padding: 2px;
+  margin: 2rem;
+  height: 18vh;
+  width: 10%;
+  border-radius: 12px;
+  box-shadow: 2px 2px 20px 3px rgba(4, 124, 125, 0.75);
+  -webkit-box-shadow: 2px 2px 20px 3px rgba(4, 124, 125, 0.75);
+  -moz-box-shadow: 2px 2px 20px 3px rgba(4, 124, 125, 0.75);
+  transition: 5s all ease;
+}
+
+
+
+/* #########  ANIMATION DEFINITION ######## */
+
+.g {
+  animation: g 2s ease;
+  transform: skew(-30deg);
+}
+
+.o {
+  animation: o 2s infinite ease-in-out;
+}
+
+.s {
+  animation: s 2s;
+}
+.t {
+  animation: t 2s;
+  box-shadow: none;
+  cursor: pointer;
+  transform: scale(2);
+}
+.u {
+  animation: u 2s;
+}
+.d {
+  animation: d 2s;
+  overflow: hidden;
+}
+.y {
+    transform: skew(30deg);
+  animation: y 3s;
+}
+
+/* ######## KEYFRAMES ######### */
+
+@keyframes g {
+  14% {
+    transform: rotate(360deg) translate(-50rem);
+  }
+}
+@keyframes o {
+
+    100% {
+        transform: rotate(360deg) ;
+    
+  }
+}
+@keyframes s {
+  42% {
+    transform:  rotate(360deg) translate(50rem);
+  }
+}
+@keyframes t {
+  56% {
+    transform: translateY(50rem) rotate(360deg) ;
+  }
+ 
+}
+@keyframes u {
+  70% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes d {
+  84% {
+    transform:  rotate(360deg) ;
+  }
+}
+@keyframes y {
+   
+  100% {
+    transform: rotate(360deg);
+ 
+  }
+}
+
+/* .more {
+    align-self: flex-end;
+    position: relative;
+    top: 30vh;
+
+} */
