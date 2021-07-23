@@ -130,3 +130,7 @@ main {
     top: 30vh;
 
 } */
+@media only screen and (max-width: 600px) {
+.error{
+  display: flex;
+}
